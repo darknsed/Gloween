@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-manrope;
+}
+
+@layer components {
+  /* My custom components here (Daniel) */
+  .web-button {
+    @apply border bg-transparent border-darkblack rounded-full pt-3 pb-3 pr-12 pl-12 hover:bg-darkblack hover:text-white hover:border-opacity-0 transition-all duration-300 ease-linear;
+  }
+  .text-hover {
+    @apply hover:text-fieryred transition-all duration-300 ease-linear;
+  }
+  .svg-hover {
+    @apply opacity-100 hover:opacity-50 transition-opacity duration-300;
+  }
+}
+
+h2,
+h1 {
+  @apply font-sans  text-7xl font-bold;
+}
